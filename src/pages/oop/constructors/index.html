@@ -1,0 +1,58 @@
+{{>header}}
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="/pages/oop/">ооп</a></li>
+        <li class="breadcrumb-item active" aria-current="page">конструкторы</li>
+    </ol>
+</nav>
+
+<div class="row">
+    <div class="col-md-2">
+        {{>categories}}
+    </div>
+    <div class="col-md-7">
+        <p>
+            Конструктор - технически это просто функция, вызываемая с помощью <i><b>new</b></i> ключевого слова.
+            Но есть два соглашения:
+        </p>
+        <ol>
+            <li>Имя функции конструктора должно начинаться с большо буквы</li>
+            <li>Функция-конструктор должна вызываться только с помощью оператора <b>new</b></li>
+        </ol>
+<pre class="language-javascript">
+<code class="language-javascript">function User(name) {
+        this.name = name;
+        this.isAdmin = false;
+    }
+
+let user = new User('Viktor')</code>
+</pre>
+        <p>
+            Когда функция вызывается как <b>new User(...)</b>
+            происходить следующее:
+        </p>
+        <ol>
+            <li>Создается новый пустой объект и он присваивается <b>this</b></li>
+            <li>Выполняется тело функции. Обычно оно модифицирует <b>this</b>, добавляя туда новые свойства.</li>
+            <li>Возвращается значение <b>this</b></li>
+        </ol>
+        <p>Другими словами <b>new User(...)</b> делает что-то вроде:</p>
+<pre class="language-javascript">
+<code class="language-javascript">function User(name) {
+    this = {} //(неявно)
+
+    this.name = name
+    this.isAdmin = false
+
+    return this //(неявно)
+}</code>
+</pre>
+    </div>
+    <div class="col-md-2">
+        <h4>Темы главы:</h4>
+    </div>
+</div>
+
+
+{{>footer}}

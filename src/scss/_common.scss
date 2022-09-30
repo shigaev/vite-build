@@ -1,3 +1,25 @@
+body {
+  font-family: 'Gerbera';
+}
+
 .wrapper {
   margin: 1rem 0;
+}
+
+header {
+  .navbar {
+    box-shadow: 0 3px 15px #00000026;
+
+    .nav-item {
+      .nav-link {
+
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #2c3034;
+
+  color: #ffffff;
 }

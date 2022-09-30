@@ -13,18 +13,18 @@ const listCategory = [{
         title: 'Cat. 3',
         link: '/pages/nested/3'
     }
-]
+];
 
 const result = listCategory.map((item) => {
     return `
         <li class="list-item"><a class="list-item__link" href="${item.link}">${item.title}</a></li>
-    `
-}).join('')
+    `;
+}).join('');
 
-const categoryClass = document.querySelector('.category')
+const categoryClass = document.querySelector('.category');
 
 if (categoryClass) {
-    categoryClass.innerHTML = result
+    categoryClass.innerHTML = result;
 }
 
-export { result }
+export { result };

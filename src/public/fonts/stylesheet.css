@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Gerbera';
+    src: url('Gerbera.eot');
+    src: local('☞Gerbera'), local('Gerbera'),
+        url('Gerbera.eot?#iefix') format('embedded-opentype'),
+        url('Gerbera.woff2') format('woff2'),
+        url('Gerbera.woff') format('woff'),
+        url('Gerbera.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('Gerbera-Light.eot');
+    src: local('☞Gerbera Light'), local('Gerbera-Light'),
+        url('Gerbera-Light.eot?#iefix') format('embedded-opentype'),
+        url('Gerbera-Light.woff2') format('woff2'),
+        url('Gerbera-Light.woff') format('woff'),
+        url('Gerbera-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('Gerbera-Black.eot');
+    src: local('☞Gerbera Black'), local('Gerbera-Black'),
+        url('Gerbera-Black.eot?#iefix') format('embedded-opentype'),
+        url('Gerbera-Black.woff2') format('woff2'),
+        url('Gerbera-Black.woff') format('woff'),
+        url('Gerbera-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('Gerbera-Bold.eot');
+    src: local('☞Gerbera Bold'), local('Gerbera-Bold'),
+        url('Gerbera-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Gerbera-Bold.woff2') format('woff2'),
+        url('Gerbera-Bold.woff') format('woff'),
+        url('Gerbera-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('Gerbera-Medium.eot');
+    src: local('☞Gerbera Medium'), local('Gerbera-Medium'),
+        url('Gerbera-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Gerbera-Medium.woff2') format('woff2'),
+        url('Gerbera-Medium.woff') format('woff'),
+        url('Gerbera-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
