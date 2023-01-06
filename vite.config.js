@@ -1,18 +1,7 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
-
-const pageData = {
-    '/index.html': {
-        title: 'Home Page',
-    },
-    '/pages/about/index.html': {
-        title: 'About Page',
-    },
-    '/pages/node/index.html': {
-        title: 'Node js',
-    },
-};
+import { pageData } from './src/pages';
 
 const partDirs = [
     'src/partials',
