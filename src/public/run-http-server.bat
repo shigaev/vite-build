@@ -1,7 +1,10 @@
 @echo off
 
-set example=C:\Users\shigaev_dv\AppData\Roaming\nvm\v18.18.0\http-server
-if not exist %example% (
+set app_data_path=%appdata%
+set example=\nvm\v18.18.0\http-server
+set full_path=%app_data_path% %example%
+set full_path=%full_path: =%
+if not exist %full_path% (
 	goto end
 	:end
 	SetLocal
