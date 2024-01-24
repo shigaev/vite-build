@@ -1,7 +1,7 @@
-let requestURL = 'http://localhost:5173/data.json';
+let requestURL = 'http://localhost:8080/data.json';
 let request = new XMLHttpRequest();
 
-request.open('GET', requestURL);
+request.open('GET', requestURL, true);
 request.responseType = 'json';
 request.send();
 
