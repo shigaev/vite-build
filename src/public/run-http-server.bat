@@ -13,9 +13,9 @@ if not exist %full_path% (
 		echo The installation has started.
 		start /b /wait cmd /c npm install -g http-server
 		echo The http server is installed.
-		start /b /wait cmd /c http-server -o
+		start /b /wait cmd /c http-server --port 9090 -o
 		cmd /k
 	) else ( exit )	
 ) else (
-	start http-server -o
+	start http-server --port 9090 -o
 )
