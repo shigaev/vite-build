@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="../../../img/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../../css/prism.css">
+    <title></title>
+  <script type="module" crossorigin src="../../../assets/main-rNFD2Acl.js"></script>
+  <link rel="stylesheet" crossorigin href="../../../assets/main-wvdGVGuK.css">
+</head>
+<body class="d-flex flex-column h-100">
+<header class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+        </div>
+    </nav>
+</header>
+<div class="wrapper">
+    <div class="container"><nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="/pages/oop/">ооп</a></li>
+        <li class="breadcrumb-item active" aria-current="page">конструкторы</li>
+    </ol>
+</nav>
+
+<div class="row">
+    <div class="col-md-2">
+        <ul>
+            <li><a href="/pages/oop/constructors/">Конструкторы</a></li>
+            <li><a href="/pages/oop/proto/">Прототипы</a></li>
+        </ul>    </div>
+    <div class="col-md-7">
+        <p>
+            Конструктор - технически это просто функция, вызываемая с помощью <i><b>new</b></i> ключевого слова.
+            Но есть два соглашения:
+        </p>
+        <ol>
+            <li>Имя функции конструктора должно начинаться с большо буквы</li>
+            <li>Функция-конструктор должна вызываться только с помощью оператора <b>new</b></li>
+        </ol>
+<pre class="language-javascript">
+<code class="language-javascript">function User(name) {
+        this.name = name;
+        this.isAdmin = false;
+    }
+
+let user = new User('Viktor')</code>
+</pre>
+        <p>
+            Когда функция вызывается как <b>new User(...)</b>
+            происходить следующее:
+        </p>
+        <ol>
+            <li>Создается новый пустой объект и он присваивается <b>this</b></li>
+            <li>Выполняется тело функции. Обычно оно модифицирует <b>this</b>, добавляя туда новые свойства.</li>
+            <li>Возвращается значение <b>this</b></li>
+        </ol>
+        <p>Другими словами <b>new User(...)</b> делает что-то вроде:</p>
+<pre class="language-javascript">
+<code class="language-javascript">function User(name) {
+    this = {} //(неявно)
+
+    this.name = name
+    this.isAdmin = false
+
+    return this //(неявно)
+}</code>
+</pre>
+    </div>
+    <div class="col-md-2">
+        <h4>Темы главы:</h4>
+    </div>
+</div>
+
+
+</div>
+</div>
+<footer class="footer mt-auto py-3">
+    <div class="container">
+        2022
+    </div>
+</footer>
+<script src="../../../js/prism.js"></script>
+</body>
+</html>
